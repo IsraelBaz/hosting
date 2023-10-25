@@ -1,0 +1,21 @@
+*{
+    margin: 1%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: gray;
+}
+table{
+    border: black 2px solid;
+    background-color: rgb(207, 207, 207);
+}
+table td{
+    border: black 2px solid;
+}
+table tr{
+    border: black 2px solid;
+}

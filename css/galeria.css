@@ -1,0 +1,81 @@
+* {
+  padding: 0; /* Elimina el espacio interior en todos los elementos */
+  margin: 0; /* Elimina el espacio exterior en todos los elementos */
+  text-decoration: none; /* Elimina las decoraciones de texto en todos los elementos */
+  list-style: none; /* Elimina los estilos de lista en todos los elementos */
+  box-sizing: border-box; /* Cambia el modelo de caja en todos los elementos */
+  font-family: 'Cascadia Code PL', sans-serif; /* Establece la fuente en todos los elementos */
+}
+
+body,
+html {
+  scroll-behavior: smooth; /* Establece el comportamiento de desplazamiento suave */
+  background-color: #808080; /* Cambiado a gris */
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a{
+  color: black;
+}
+nav{
+  padding: 10px;
+  background-color: rgb(110, 110, 110);
+  text-align: center;
+}
+nav :hover{
+  text-align: center;
+  background-color: #373737;
+  transition: 0.5s;
+  color: white;
+  padding: 5px;
+  border-radius: 20%;
+}
+.gallery { /* Cambiado el nombre a "gallery" */
+  display: grid; /* Establece el modelo de diseño de cuadrícula */
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño */
+  grid-template-rows: 250px; /* Establece la altura de las filas */
+  grid-gap: 5px; /* Establece el espacio entre los elementos de la cuadrícula */
+}
+
+.gallery div {
+  background-color: rgba(255, 255, 255, 0.8); /* Establece el color de fondo de los divs */
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 10px; /* Establece el tamaño de fuente de los divs */
+  width: 100%; /* Establece el ancho de los divs al 100% */
+  height: 100%; /* Establece la altura de los divs al 100% */
+  overflow: hidden; /* Oculta el contenido que se desborde del div */
+}
+
+.gallery img {
+  cursor: pointer; /* Cambia el cursor a un puntero al pasar el ratón sobre las imágenes */
+  transition: all .3s; /* Establece una transición suave para todos los cambios de estilo */
+  width: 100%; /* Establece el ancho de las imágenes al 100% */
+  height: 100%; /* Establece la altura de las imágenes al 100% */
+  object-fit: cover; /* Ajusta las imágenes para cubrir el área del div */
+  filter: grayscale(100%); /* Imágenes en blanco y negro por defecto */
+}
+
+.gallery div:hover img {
+  filter: grayscale(0%); /* Imágenes a color al pasar el ratón por encima */
+  transform: none; /* Eliminado el efecto de ampliación */
+}
+
+.img1 {
+  grid-row-start: 1; /* La imagen 1 comienza en la fila 1 */
+  grid-row-end: 4; /* La imagen 1 termina en la fila 4 */
+}
+
+.img2 {
+  grid-column-start: 2; /* La imagen 2 comienza en la columna 2 */
+  grid-column-end: 4; /* La imagen 2 termina en la columna 4 */
+}
+
+.img5 {
+  grid-column-start: 2; /* La imagen 5 comienza en la columna 2 */
+  grid-column-end: 4; /* La imagen 5 termina en la columna 4 */
+}
+
+.img6 {
+  grid-column-start: 1; /* La imagen 6 comienza en la columna 1 */
+  grid-column-end: 4; /* La imagen 6 termina en la columna 4 */
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IVA</title>
+    <!-- Enlazamos el archivo CSS. -->
+    <link rel="stylesheet" href="css/cssIva.css">
+</head>
+<body>
+    <!-- Contenedor -->
+    <div class="container">
+        <a href="index.html">Inicio</a>
+        <!-- Título de la página. -->
+        <h1>Calculadora de IVA</h1>
+        <img src="imgBMW/iva.jpeg">
+        <!-- Formulario de la calculadora de IVA. -->
+        <form id="iva-calculator">
+            <label for="amount">Monto (sin IVA):</label>
+            <input type="number" id="amount" required>
+            <label for="iva">IVA (%):</label>
+            <input type="number" id="iva" required>
+            <button type="submit">Calcular</button>
+        </form>
+        <!-- Muestra el resultado. -->
+        <div id="result"></div>
+    </div>
+    <!-- Enlazamos el archivo JavaScript. -->
+    <script src="js/iva.js"></script>
+</body>
+</html>

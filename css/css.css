@@ -1,0 +1,27 @@
+*{
+    margin: 1%;
+    padding: 0%;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:hover{
+    color: gray;
+}
+th{
+    border: 1px solid black;
+}
+#Inv {
+    color: #000;
+    text-decoration: none;
+}
+table.Table {
+    border: 1px solid black;
+}
+thead.Red{
+    background-color: red;
+}
+tfoot.Yellow{
+    background-color: yellow;
+}

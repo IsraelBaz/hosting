@@ -1,0 +1,68 @@
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	background-color: #f0f0f0;
+}
+/* Estilos para el contenedor de la calculadora de IVA. */
+
+.container {
+	background-color: white;
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 600px;
+}
+/* Estilos para el formulario de la calculadora de IVA. */
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+/* Estilos para los campos de entrada del formulario. */
+
+input {
+	margin-bottom: 1rem;
+}
+/* Estilos para el botón del formulario. */
+
+button {
+	background-color: #007bff;
+	color: white;
+	border: none;
+	padding: 0.5rem;
+	cursor: pointer;
+	border-radius: 5px;
+}
+/* Estilos para el título de la página. */
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+/* Ajustamos la imagen del contenedor. */
+img{
+	width: 100%;
+	height: auto;
+}
+/* Modificamos el boton de INICIO */
+
+a{
+	font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+a:hover{
+	transition: 0.5s;
+	color: rgb(224, 28, 28);
+}
+/* Estilos para el botón del formulario cuando se pasa el ratón sobre él. */
+
+button:hover {
+	background-color: #0056b3;
+}

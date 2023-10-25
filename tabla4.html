@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario de Registro de Vehículos</title>
+    <link rel="stylesheet" href="css/tab4.css">
+</head>
+<body>
+	<div class="Center">
+	<form>
+		<h1>Registro de vehículos</h1>
+		<a href="index.html">Volver </a><a href="tabla1.html">Tabla1 </a><a href="tabla2.html">Tabla 2 </a><a href="tabla3.html">Tabla 3 </a></p>
+		<fieldset>
+			<legend>Datos del titular</legend>
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" maxlength="30" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\\\\s]+" placeholder="Introduce el nombre...">
+
+			<label for="apellido">Apellido:</label>
+			<input type="text" id="apellido" name="apellido" maxlength="30" required pattern="[A-Za-záéíóúÁÉÍÓÚñÑ\\\\s]+" placeholder="Introduce el apellido...">
+
+			<label for="telefono">Teléfono:</label>
+			<input type="tel" id="telefono" name="telefono" maxlength="9" required pattern="[0-9]+" placeholder="Introduce el teléfono...">
+
+			<label for="fecha_empadronamiento">Fecha de empadronamiento:</label>
+			<input type="date" id="fecha_empadronamiento" name="fecha_empadronamiento" required>
+		</fieldset>
+		<hr>
+		<fieldset>
+			<legend>Datos del vehículo</legend>
+			<label for="marca">Marca:</label>
+			<select id="marca" name="marca">
+                <option value="">Selecciona una marca</option>
+				<option value="Audi">Audi</option>
+				<option value="BMW">BMW</option>
+				<option value="Ferrari">Ferrari</option>
+				<option value="Ford">Ford</option>
+				<option value="Jaguar">Jaguar</option>
+				<option value="Lamborghini">Lamborghini</option>
+				<option value="Mercedes-Benz">Mercedes-Benz</option>
+				<option value="Porsche">Porsche</option>
+				<option value="Rolls-Royce">Rolls-Royce</option>
+				<option value="Tesla">Tesla</option>
+			</select>
+
+			<label for="modelo">Modelo:</label>
+			<input type="text" id="modelo" name="modelo" required placeholder="Introduce el modelo...">
+			<label for="año">Año:</label>
+			<select id="año" name="año">
+                <option value="">Seleccione el año</option>
+				<option value="2000">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+				<option value="2003">2003</option>
+				<option value="2004">2004</option>
+				<option value="2005">2005</option>
+				<option value="2006">2006</option>
+				<option value="2007">2007</option>
+				<option value="2008">2008</option>
+				<option value="2009">2009</option>
+				<option value="2010">2010</option>
+				<option value="2011">2011</option>
+				<option value="2012">2012</option>
+				<option value="2013">2013</option>
+				<option value="2014">2014</option>
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+				<option value="2018">2018</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+				<option value="2023">2023</option>
+			</select>
+
+			<label for="color">Color:</label>
+			<select id="color" name="color">
+                <option value="">Selecciona un color</option>
+				<option value="Blanco">Blanco</option>
+				<option value="Negro">Negro</option>
+				<option value="Gris">Gris</option>
+				<option value="Rojo">Rojo</option>
+				<option value="Azul">Azul</option>
+				<option value="Verde">Verde</option>
+				<option value="Amarillo">Amarillo</option>
+				<option value="Naranja">Naranja</option>
+				<option value="Morado">Morado</option>
+				<option value="Rosa">Rosa</option>
+			</select>
+			<label for="matricula">Matrícula:</label>
+<input type="text" id="matricula" name="matricula" required pattern="[A-Z]{3}[0-9]{4}" placeholder="Introduce la matrícula...">
+		<label for="ciudad">Ciudad:</label>
+		<select id="ciudad" name="ciudad">
+            <option value="">Selecciona una ciudad</option>
+			<option value="Artigas">Artigas</option>
+			<option value="Canelones">Canelones</option>
+			<option value="Cerro Largo">Cerro Largo</option>
+			<option value="Colonia">Colonia</option>
+			<option value="Durazno">Durazno</option>
+			<option value="Flores">Flores</option>
+			<option value="Florida">Florida</option>
+			<option value="Lavalleja">Lavalleja</option>
+			<option value="Maldonado">Maldonado</option>
+			<option value="Montevideo">Montevideo</option>
+			<option value="Paysandú">Paysandú</option>
+			<option value="Río Negro">Río Negro</option>
+			<option value="Rivera">Rivera</option>
+			<option value="Rocha">Rocha</option>
+			<option value="Salto">Salto</option>
+			<option value="San José">San José</option>
+			<option value="Soriano">Soriano</option>
+			<option value="Tacuarembó">Tacuarembó</option>
+			<option value="Treinta y Tres">Treinta y Tres</option>
+		</select>
+	</fieldset>
+    <input type="submit" value="Enviar">
+</form>
+</div>
+</body>
+</html>

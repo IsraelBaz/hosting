@@ -1,0 +1,171 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	background-color: #333;
+}
+header {
+	background-color: #111;
+	padding: 20px;
+	text-align: center;
+}
+nav :hover{
+	background-color: rgb(40, 40, 40);
+	transition: 0.5s;
+	border-radius: 5px;
+}
+a:hover{
+	background-color: rgb(15, 15, 15);
+	font-size: 20px;
+	transition: 0.5s;
+	text-decoration: underline;
+}
+h1 {
+	margin: 0;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	display: block;
+	padding: 10px;
+	color: #fff;
+	text-decoration: none;
+}
+
+section {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px;
+	text-align: center;
+}
+
+section h2 {
+	margin-top: 0;
+}
+
+section p {
+	margin-bottom: 20px;
+}
+
+.modelos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.modelo {
+	flex-basis: 24%;
+	margin: 20px;
+	padding: 20px;
+	background-color: #111;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.modelo :hover{
+	margin: 0px;
+	background-color: #111;
+	border-radius: 5px;
+	transition: 0.4s;
+	box-shadow: 0 0 10px rgba(145, 145, 145, 0.5);
+}
+.modelo img {
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+	object-position: center;
+  }
+.modelo .slider :hover{
+	margin: 5px;
+	background-color: #111;
+	border-radius: 5px;
+	transition: 0.4s;
+	box-shadow: 0 0 10px rgba(145, 145, 145, 0.5);
+}
+h2{
+	font-size: 30px;
+	text-decoration: underline;
+	letter-spacing: 5px;
+}
+p{
+	font-size: 20px;
+}
+.modelo h3 {
+	margin-top: 0;
+}
+
+.modelo p {
+	margin-bottom: 0;
+}
+
+form label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: none;
+}
+
+form input[type="submit"] {
+	background-color: #111;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+footer {
+	background-color: #111;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 0;
+}
+.slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  transition: 0.5s;
+}
+img {
+  scroll-snap-align: center;
+  width: 100%;
+  height: auto;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+	background-color: gray;
+  }
+
+  @media screen and (max-width: 768px) {
+	.modelos {
+	  flex-direction: column;
+	}
+	.modelo {
+	  flex-basis: auto;
+	}
+  }
+  
